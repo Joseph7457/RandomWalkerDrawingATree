@@ -1,8 +1,8 @@
 
 
-Walker w;
-WalkerVerticalLine wvl, wvl1, wvl2, wvl3, wvl4, wvl5, wvl6, wvl7, wvl8, wvl9;
-Feuillage f, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13;
+Walker w;             // Useless, i'm sorry for him
+WalkerVerticalLine wvl, wvl1, wvl2, wvl3, wvl4, wvl5, wvl6, wvl7, wvl8, wvl9;  // 9 Walker to draw the trunk
+Feuillage f, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13;           // 13 Feuillages to draw the leaves
 
 boolean trigger = false;
  
@@ -37,13 +37,13 @@ f10.step(); f10.display(); f11.step(); f11.display(); f12.step(); f12.display();
 }
 
 
-void keyPressed(){
+void keyPressed(){      //reset
 background(255);  
   
 }
 
 
-void mouseClicked(){
+void mouseClicked(){   // stop // reboot
   
   if (trigger == true) {trigger = false;}
   else{trigger=true;
